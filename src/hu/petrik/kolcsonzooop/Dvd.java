@@ -2,7 +2,7 @@ package hu.petrik.kolcsonzooop;
 
 import javax.lang.model.element.NestingKind;
 
-public class Dvd implements Kolcsonozheto{
+public class Dvd implements Kolcsonozheto, Comparable<Dvd> {
 
     private String cim;
     private int hossz; //percben
@@ -28,5 +28,14 @@ public class Dvd implements Kolcsonozheto{
     @Override
     public int meddigKolcsonozheto() {
         return 7;
+    }
+
+    @Override
+    public int compareTo(Dvd o) {
+        int eredmeny = this.hossz - o.hossz;
+        if (eredmeny == 0) {
+            eredmeny = this.cim.compareTo(o.cim);
+        }
+        return eredmeny;
     }
 }

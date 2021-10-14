@@ -1,7 +1,6 @@
 package hu.petrik.kolcsonzooop;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 public class Main {
 
@@ -19,6 +18,7 @@ public class Main {
         Ujsag u3 = new Ujsag("Képes Sport", 2007, 10);
 
         System.out.println(k1.megjelenitendoNev());
+        System.out.println(k1.getIsbn());
         System.out.println(d1.megjelenitendoNev());
 
         List<Kolcsonozheto> katalogus = new ArrayList<>();
@@ -36,6 +36,23 @@ public class Main {
 
         for (Kolcsonozheto k: katalogus) {
             System.out.println(k.megjelenitendoNev() + " " + k.meddigKolcsonozheto() + " nap");
+        }
+
+        List<Dvd> dvdk = new ArrayList<>();
+        dvdk.add(d1);
+        dvdk.add(d2);
+        dvdk.add(d3);
+        dvdk.add(d4);
+        dvdk.add(d5);
+
+        for (Dvd d: dvdk) {
+            System.out.println(d.megjelenitendoNev());
+        }
+        System.out.println();
+        Collections.sort(dvdk);
+
+        for (Dvd d: dvdk) {
+            System.out.println(d.megjelenitendoNev());
         }
     }
 }
