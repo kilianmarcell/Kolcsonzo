@@ -5,9 +5,9 @@ import java.util.*;
 public class Main {
 
     public static void main(String[] args) {
-        Kolcsonozheto k1 = new Konyv("J.R.R Tolkien", "Hobbit", "1234-3215");
-        Kolcsonozheto k2 = new Konyv("J.R.R Tolkien", "A gyűrűk ura", "7896-3215");
-        Kolcsonozheto k3 = new Konyv("George R.R Martin", "Trónok Harca", "1178-3220");
+        Konyv k1 = new Konyv("J.R.R Tolkien", "Hobbit", "1234-3215");
+        Konyv k2 = new Konyv("J.R.R Tolkien", "A gyűrűk ura", "7896-3215");
+        Konyv k3 = new Konyv("George R.R Martin", "Trónok Harca", "1178-3220");
         Dvd d1 = new Dvd("Star Wars V. rész - A birodalom visszavág", 124);
         Dvd d2 = new Dvd("Star Wars IV. rész - Egy új remény", 105);
         Dvd d3 = new Dvd("Star Wars VI. rész - A jedi visszatér", 113);

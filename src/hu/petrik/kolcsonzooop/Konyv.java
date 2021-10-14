@@ -4,9 +4,9 @@ public class Konyv implements Kolcsonozheto {
 
     private String cim, szerzo, isbn;
 
-    public Konyv(String cim, String szerzo, String isbn) {
-        this.cim = cim;
+    public Konyv(String szerzo, String cim, String isbn) {
         this.szerzo = szerzo;
+        this.cim = cim;
         this.isbn = isbn;
     }
 
